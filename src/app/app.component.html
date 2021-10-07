@@ -15,35 +15,28 @@
     <div class="sidebar-logo">
       <a (click)="isCollapsed = !isCollapsed" > 
         <!-- target="_blank" -->
-        <img src="https://static2.cbrimages.com/wordpress/wp-content/uploads/2020/03/Avengers-Anatomy-Hulk-3.jpg" alt="logo">
-        <h1 style="font-family: 'Anton', sans-serif; font-size: 20px;">HulkGeeks</h1>
+        
+        <img src="https://img.icons8.com/material-outlined/24/000000/menu--v4.png"/>
+        <!-- <h1 style="font-family: 'Anton', sans-serif; font-size: 20px;">HulkGeeks</h1> -->
       </a>
     </div>
     <ul nz-menu nzTheme="light" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-      <li nz-submenu nzOpen nzTitle="EXCLUSIVE" nzIcon="dashboard">
+      <li nz-submenu nzOpen nzTitle="Latest Opportunites " nzIcon="aim">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a routerLink="/home">Internship Opportunites</a>
+            <a href="#"[routerLink]="['/home']" [routerLinkActive]="['is-active']">Home</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Full time Opportunites</a>
+            <a href="#"[routerLink]="['/internship_opportunities']" [routerLinkActive]="['is-active']">Internship Opportunites</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Free Courses</a>
+            <a href="#"[routerLink]="['/placement']" [routerLinkActive]="['is-active']">Full time Opportunites</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Government Jobs</a>
-          </li>
-          
-        </ul>
-      </li>
-      <li nz-submenu nzOpen nzTitle="Sign In" nzIcon="login">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a>SIGN IN</a>
+            <a href="#"[routerLink]="['/free_courses']" [routerLinkActive]="['is-active']">Free Courses</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Subscribe Now</a>
+            <a href="#"[routerLink]="['/government_opportunities']" [routerLinkActive]="['is-active']">Government Jobs</a>
           </li>
           
         </ul>
@@ -58,50 +51,18 @@
                nz-icon
                [nzType]="isCollapsed ? 'menu-fold' : 'menu-unfold'"
             ></i>
-            <img class= "logo" src="\assets\HulkGeeks-logos.jpeg" alt="">
+            <img class= "logo" src="\assets\DrivoGeek-logos.jpeg" alt="">
           </span>
         </div>
     </nz-header>
-    <nz-content style="position:relative;left: 5%;">
+    <nz-content >
       <div class="inner-content">
         <router-outlet >
-          <div >
-         <br><br> <div style="font-family: 'Roboto', sans-serif;"><b>Welcome to HulkGeeks. This is a place where you will get job updates regularly ...Do join our telegram channel and the whatsapp group to stay updated.</b></div>
-    <br>
-          <b>Explore</b>
-          <div class="card">
-          <img src="https://images.shiksha.com/mediadata/images/articles/1583929585phpSip48r.jpeg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4 style="font-family: 'Anton', sans-serif;font-size: 40px;"><b>Placement Drives</b></h4> 
-            <button>Check it out</button> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://legalsarcasm.com/wp-content/uploads/2021/02/internship-word-cloud-concept-grey-background-90730727-800x445.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4 style="font-family: 'Anton', sans-serif;font-size: 40px;"><b>Internship Opportunities</b></h4> 
-            <button>Check it out</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://i0.wp.com/opportunitycell.com/wp-content/uploads/2020/11/2020.132_BAM_CA_10-free-short-courses-to-upskill_940x485.jpg?fit=940%2C485&ssl=1" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4 style="font-family: 'Anton', sans-serif;font-size: 40px;"><b>Free Courses with certificates</b></h4> 
-            <button>Check it out</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2019/07/government-jobs-1537292608-1564414106.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4 style="font-family: 'Anton', sans-serif;font-size: 40px;"><b>Govenment Jobs</b></h4> 
-            <button>Check it out</button> 
-          </div>
-        </div>
-      </div>
+
+        <br><br>
         </router-outlet>
       </div>
     </nz-content>
-    <a href="#"><img class="whatsapp" src="https://png.pngtree.com/element_our/sm/20180626/sm_5b321c99945a2.jpg" alt="" style="height: 100px;width: 100px;position: fixed; left: 90%;top: 85%; "></a>
+    <a href="https://chat.whatsapp.com/GMlcLL9Yr5p7GL7DnhBGnL"><img class="whatsapp" src="https://png.pngtree.com/element_our/sm/20180626/sm_5b321c99945a2.jpg" alt="" style="height: 100px;width: 100px;position: fixed; left: 90%;top: 85%; "></a>
   </nz-layout>
 </nz-layout>
-a
