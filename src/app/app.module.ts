@@ -23,7 +23,7 @@ import { HomeComponent } from './home/home.component';
 // import { GovContentComponent } from './gov-content/gov-content.component';
 // import { PlacementContentComponent } from './placement-content/placement-content.component';
 import { JobComponent } from './resumesuggestion/job.component';
-// import { CountdownComponent } from 'ngx-countdown';
+import { CountdownModule } from 'ngx-countdown';
 import { Job1000Component } from './jobs/job1000/job1000.component';
 import { Job1001Component } from './jobs/job1001/job1001.component';
 import { Link1000Component } from './links/link1000/link1000.component';
@@ -96,7 +96,6 @@ registerLocaleData(en);
     // CoursesContentComponent,
     // GovContentComponent,
     // PlacementContentComponent,
-    // CountdownComponent,
     Job1000Component,
     Job1001Component,
     Job1003Component,
@@ -162,7 +161,8 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     IconsProviderModule,
     NzLayoutModule,
-    NzMenuModule
+    NzMenuModule,
+    CountdownModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

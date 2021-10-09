@@ -14,6 +14,7 @@
   z-index: 10;
   min-height: 100vh;
   box-shadow: 2px 0 6px rgba(72, 64, 175, 0.35);
+  opacity: 0.7;
 }
 
 .header-trigger {
@@ -63,7 +64,7 @@ nz-header {
 
 .app-header {
   position: relative;
-  height: 64px;
+  height: 80px;
   padding: 0;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,21,41,.08);
@@ -77,4 +78,8 @@ nz-content {
   padding: 24px;
   background: #fff;
   height: 100%;
+}
+.logo{
+  height: 80px;
+  width: 250px;
 }
