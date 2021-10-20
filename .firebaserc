@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "drivogeek"
+  },
+  "targets": {
+    "drivogeek": {
+      "hosting": {
+        "drive": [
+          "drivogeek"
+        ]
+      }
+    }
   }
 }

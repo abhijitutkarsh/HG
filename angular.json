@@ -107,6 +107,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "drive:build:production",
+            "firebaseProject": "drivogeek",
+            "firebaseHostingSite": "drivogeek"
+          }
         }
       }
     }

@@ -80,7 +80,12 @@ import { CoursecontentComponent } from './coursecontent/coursecontent.component'
 import { InternshipcontentComponent } from './internshipcontent/internshipcontent.component';
 import { PlacementcontentComponent } from './placementcontent/placementcontent.component';
 import { GovcontentComponent } from './govcontent/govcontent.component';
-
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideMessaging,getMessaging } from '@angular/fire/messaging';
+// import { AngularFireModule } from '@angularfire';
 registerLocaleData(en);
 
 @NgModule({
@@ -163,6 +168,10 @@ registerLocaleData(en);
     NzLayoutModule,
     NzMenuModule,
     CountdownModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideMessaging(() => getMessaging()),
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

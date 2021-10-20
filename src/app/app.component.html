@@ -1,17 +1,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
+<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet"> 
 
 <nz-layout class="app-layout">
   <nz-sider class="menu-sidebar"
             nzCollapsible
             nzWidth="200px"
-            nzheight ="fit-content"
             nzBreakpoint="md"
             [(nzCollapsed)]="isCollapsed"
-             style="position: fixed;">
+            
+             >
     <div class="sidebar-logo">
       <a (click)="isCollapsed = !isCollapsed" > 
         <!-- target="_blank" -->
@@ -41,6 +41,9 @@
         </ul>
       </li>
     </ul>
+    <div class="floating">
+    <a  href="https://chat.whatsapp.com/GMlcLL9Yr5p7GL7DnhBGnL"><img class="whatsapp" src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png" alt="" style="height: 100px;width: 100px;position: fixed; top: 70%;" ></a>
+  </div>
   </nz-sider>
   <nz-layout>
     <nz-header style="position: fixed;">
@@ -62,6 +65,6 @@
         </router-outlet>
       </div>
     </nz-content>
-    <a href="https://chat.whatsapp.com/GMlcLL9Yr5p7GL7DnhBGnL"><img class="whatsapp" src="https://png.pngtree.com/element_our/sm/20180626/sm_5b321c99945a2.jpg" alt="" style="height: 100px;width: 100px;position: fixed; left: 90%;top: 85%; "></a>
+    <!-- <a href="https://chat.whatsapp.com/GMlcLL9Yr5p7GL7DnhBGnL"><img class="whatsapp" src="https://www.kindpng.com/picc/m/19-195256_whatsapp-icon-whatsapp-logo-jpg-download-hd-png.png" alt="" style="height: 100px;width: 100px;position: fixed; top: 80%;" ></a> -->
   </nz-layout>
 </nz-layout>

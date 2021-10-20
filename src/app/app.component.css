@@ -5,9 +5,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.app-layout {
+/* .app-layout {
   height: 100vh;
-}
+} */
 
 .menu-sidebar {
   position: relative;
@@ -82,4 +82,18 @@ nz-content {
 .logo{
   height: 80px;
   width: 250px;
+}
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: fixed;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
 }
